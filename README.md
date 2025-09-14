@@ -30,3 +30,32 @@
 - **Documentação:** o código deve conter comentários explicativos sobre a criação da struct, entrada e exibição de dados.
  
 - **Manutenibilidade:** os nomes das variáveis e funções devem ser claros e representativos, facilitando a leitura e manutenção do código.
+
+# Segundo Commit
+
+**Objetivos**
+
+-  Adicionar a funcionalidade de ataque entre os territórios.
+
+-   Com base nos territórios já cadastrados, o sistema deverá permitir que um jogador selecione um território como atacante, e outro como defensor. O ataque será resolvido por meio de uma simulação com dados aleatórios (como rolagem de dados), e o resultado alterará o controle e as tropas do território atacado.
+
+**Requisitos Funcionais**
+
+
+- **Alocação dinâmica de territórios:** utilizar calloc ou malloc para alocar memória para um vetor de struct Territorio com tamanho informado pelo usuário.
+ 
+- **Simulação de ataques:** criar uma função void atacar(Territorio* atacante, Territorio* defensor) que simula um ataque, utilizando números aleatórios como se fossem dados de batalha.
+ 
+- **Atualização de dados:** o território defensor deve mudar de dono (cor do exército) se o atacante vencer, e suas tropas devem ser atualizadas.
+ 
+- **Exibição pós-ataque:** o sistema deve exibir os dados atualizados dos territórios após cada ataque.
+
+**Requisitos Não Funcionais**
+
+- **Modularização:** o código deve estar organizado com funções distintas para cadastro, exibição, ataque e liberação de memória.
+ 
+- **Uso de ponteiros:** todos os acessos e modificações aos dados dos territórios devem ser feitos por ponteiros.
+ 
+- **Gerenciamento de memória:** toda memória alocada dinamicamente deve ser liberada ao final do programa utilizando free.
+ 
+- **Interface amigável:** o terminal deve orientar o jogador sobre quais territórios podem ser usados para atacar e defender, com mensagens claras.
