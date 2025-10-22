@@ -59,3 +59,9 @@
 - **Gerenciamento de memória:** toda memória alocada dinamicamente deve ser liberada ao final do programa utilizando free.
  
 - **Interface amigável:** o terminal deve orientar o jogador sobre quais territórios podem ser usados para atacar e defender, com mensagens claras.
+
+# Terceiro Commit
+
+**Objetivos**
+
+- Implementar a funcionalidade de missões estratégicas individuais para cada jogador, que deverá receber, no início do jogo, uma missão sorteada de forma automática entre diversas descrições pré-definidas, armazenadas em um vetor de strings. Essa missão será consultada durante o jogo para verificar se a condição de vitória foi atingida. A nova camada de estratégia exige organização modular do código, uso de ponteiros, passagem de parâmetros por valor e referência e gerenciamento adequado da memória.
